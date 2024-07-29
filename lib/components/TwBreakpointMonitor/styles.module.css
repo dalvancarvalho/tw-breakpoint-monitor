@@ -1,0 +1,24 @@
+:root {
+  --dark: #000;
+}
+
+.monitor {
+  /* outline: 1px dashed orange; */
+  position: fixed;
+  z-index: 9999999;
+  min-width: 302px;
+  max-width: max-content;
+  height: auto;
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.monitor[data-transparency='true'][data-monitor-expanded='true'] {
+  background-color: rgb(38 38 38 / 0.8);
+}
+
+.monitor[data-transparency='true'][data-monitor-expanded='true'] {
+  background-color: rgb(38 38 38 / 0.8);
+}
