@@ -1,0 +1,65 @@
+/* Table/styles.module.scss */
+
+@import '@fontsource-variable/red-hat-mono';
+
+$border-color-main: #73737399;
+$border-color: #73737366;
+$cell-height: 2rem;
+
+.table {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  &[data-position|='top'] {
+    margin-top: 1rem;
+  }
+
+  &[data-position|='bottom'] {
+    margin-bottom: 1rem;
+  }
+
+  & * th[scope='col'] {
+    min-width: 135px;
+    height: 2rem;
+    border-bottom: 1px solid $border-color-main;
+    font-weight: 500;
+  }
+
+  & * th[scope='row'] {
+    height: $cell-height;
+    border-bottom: 1px solid $border-color;
+    border-right: 1px solid $border-color-main;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 500;
+
+    & > a {
+      margin-left: 0.5rem;
+
+      &:hover > img {
+        opacity: 1;
+      }
+    }
+
+    & * img {
+      width: 0.75rem;
+      height: 0.75rem;
+      opacity: 0.7;
+      transition-property: all;
+      transition-duration: 150ms;
+    }
+  }
+
+  & * td {
+    height: $cell-height;
+    border-bottom: 1px solid $border-color;
+    font-family: 'Red Hat Mono Variable', monospace;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 400;
+  }
+}

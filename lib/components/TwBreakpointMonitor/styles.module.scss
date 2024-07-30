@@ -1,0 +1,82 @@
+/* TwBreakpointMonitor/styles.module.scss */
+
+@import '@fontsource-variable/red-hat-display';
+
+$bg-opaque: #262626;
+$bg-opaque-hover: #404040;
+$bg-transparent: #262626cc /* 80% opacity */;
+$bg-transparent-idle: #26262666 /* 40% opacity */;
+$border-radius: 1rem;
+$ease-out: cubic-bezier(0, 0, 0.2, 1);
+$side-offset: 1rem;
+$text-primary: #fff;
+
+.monitor {
+  position: fixed;
+  z-index: 9999999;
+  min-width: 302px;
+  max-width: max-content;
+  height: auto;
+  backdrop-filter: blur(6px);
+  font-family: 'Red Hat Display Variable', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: $text-primary;
+  transition-property: all;
+  transition-timing-function: $ease-out;
+  transition-duration: 300ms;
+
+  &[data-transparency='true'][data-monitor-expanded='true'] {
+    background-color: $bg-transparent;
+  }
+
+  &[data-transparency='true'][data-monitor-expanded='false'] {
+    background-color: $bg-transparent-idle;
+
+    &:hover {
+      background-color: $bg-transparent;
+    }
+  }
+
+  &[data-transparency='false'][data-monitor-expanded] {
+    background-color: $bg-opaque;
+  }
+
+  &[data-transparency='false'][data-monitor-expanded='false']:hover {
+    background-color: $bg-opaque-hover;
+  }
+
+  &[data-position|='top'] {
+    top: 0;
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    flex-direction: column-reverse;
+
+    &[data-monitor-expanded='false'] {
+      translate: 0 -80%;
+    }
+  }
+
+  &[data-position|='bottom'] {
+    bottom: 0;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+
+    &[data-monitor-expanded='false'] {
+      translate: 0 80%;
+    }
+  }
+
+  &[data-position$='center'] {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  &[data-position$='left'] {
+    left: $side-offset;
+  }
+
+  &[data-position$='right'] {
+    right: $side-offset;
+  }
+}

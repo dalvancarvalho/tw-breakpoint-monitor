@@ -1,0 +1,57 @@
+/* ToggleButton/styles.module.scss */
+
+$button-color: #00000000;
+$button-hover: #ffffff40;
+$opaque-button-hover: #ffffff26;
+
+.button {
+  position: absolute;
+  z-index: 10;
+  right: 1rem;
+  width: 1.75rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 150ms;
+  background-color: $button-color;
+
+  &:hover {
+    transition-property: color, background-color;
+    transition-duration: 150ms;
+  }
+
+  &[data-transparency='true']:hover {
+    background-color: $button-hover;
+  }
+
+  &[data-transparency='false']:hover {
+    background-color: $opaque-button-hover;
+  }
+
+  &[data-position|='top'] {
+    bottom: 1rem;
+  }
+
+  &[data-position|='bottom'] {
+    top: 1rem;
+  }
+
+  &[data-position|='top'][data-monitor-expanded='true'] > img {
+    transform: rotate(180deg);
+  }
+
+  &[data-position|='bottom'][data-monitor-expanded='false'] > img {
+    transform: rotate(180deg);
+  }
+
+  & > img {
+    transition-property: transform;
+    transition-duration: 150ms;
+    transition-delay: 300ms;
+    width: 0.75rem;
+    height: auto;
+  }
+}
