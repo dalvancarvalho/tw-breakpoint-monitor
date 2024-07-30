@@ -1,12 +1,6 @@
 /* types/index.ts */
 
-type Position =
-  | 'bottom-left'
-  | 'bottom-center'
-  | 'bottom-right'
-  | 'top-left'
-  | 'top-center'
-  | 'top-right'
+import { ComponentProps } from 'react'
 
 interface ScreenProps {
   breakpoint: string
@@ -16,20 +10,24 @@ interface ScreenProps {
   viewportSize: string
 }
 
-export interface TwBreakpointMonitorProps extends React.HTMLAttributes<HTMLDivElement> {
-  position?: Position
+export interface TwBreakpointMonitorProps {
+  className?: string
+  position?:
+    | 'bottom-left'
+    | 'bottom-center'
+    | 'bottom-right'
+    | 'top-left'
+    | 'top-center'
+    | 'top-right'
   transparency?: boolean
 }
 
-export interface HeadingProps extends React.HTMLAttributes<HTMLDivElement> {
-  isMonitorExpanded: boolean
+export interface HeadingProps extends ComponentProps<'div'> {
   screenProps: ScreenProps
-  toggleMonitor: (event: React.MouseEvent<HTMLDivElement>) => void
 }
 
-export interface ToggleButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  isMonitorExpanded: boolean
-  position: string
-  toggleMonitor: (event: React.MouseEvent<HTMLButtonElement>) => void
-  transparency: boolean
+export interface ToggleButtonProps extends ComponentProps<'button'> {}
+
+export interface TableProps extends ComponentProps<'table'> {
+  screenProps: ScreenProps
 }
