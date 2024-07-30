@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 export function useScreenProps() {
-  // Custom hook from dalvanc.com that returns several screen properties
+  // Custom hook that returns several screen properties
 
   const [isPortrait, setIsPortrait] = useState(false)
   const [viewportDimensions, setViewportDimensions] = useState({

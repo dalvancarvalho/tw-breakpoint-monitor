@@ -8,7 +8,7 @@ export function useLocalStorage<T>(
   key: string,
   initialValue: InitialValueType<T>
 ): [T, React.Dispatch<React.SetStateAction<T>>] {
-  // Custom hook from dalvanc.com that stores the value of a state inside the Local Storage
+  // Custom hook that stores the value of a state inside the Local Storage
 
   const [value, setValue] = useState<T>(() => getSavedValue(key, initialValue))
 
