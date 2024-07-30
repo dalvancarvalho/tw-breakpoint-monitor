@@ -1,34 +1,15 @@
 /* ToggleButton/index.tsx */
 
-// import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import type { ToggleButtonProps } from '../../../../utils/types'
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
+import chevronDown from '../../../../assets/chevron-down-solid.svg'
 
-export function ToggleButton({
-  isMonitorExpanded,
-  position,
-  toggleMonitor,
-  transparency,
-}: ToggleButtonProps) {
+export function ToggleButton(props: ToggleButtonProps) {
   // Toggles the panel between collapsed/expanded state
 
   return (
-    <button
-      // className={styles.button}
-      onClick={(event) => toggleMonitor(event)}
-      title={isMonitorExpanded ? 'Collapse panel' : 'Expand panel'}
-      data-position={position}
-      data-transparency={transparency}
-    >
-      {/* <FontAwesomeIcon
-        className="transition-rotate duration-150 delay-300
-        group-data-[position|=top]/panel:group-data-[panel-expanded=true]/panel:rotate-180
-        group-data-[position|=bottom]/panel:group-data-[panel-expanded=false]/panel:rotate-180"
-        icon={faChevronDown}
-        size="sm"
-      /> */}
+    <button className={styles.button} {...props}>
+      <img src={chevronDown} alt="Chevron down icon" />
     </button>
   )
 }
