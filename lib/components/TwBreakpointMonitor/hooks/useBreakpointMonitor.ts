@@ -24,19 +24,17 @@ export function useBreakpointMonitor() {
   useEffect(() => {
     const breakpointsList = Object.keys(tailwindBreakpoints)
     const statusList = Object.values(tailwindBreakpoints)
-    const currentBreakpoint = statusList.lastIndexOf(true)
+    const activeBreakpoint = statusList.lastIndexOf(true)
 
-    if (currentBreakpoint === -1) {
+    if (activeBreakpoint === -1) {
       setBreakpoint('mobile')
       return
     }
 
-    setBreakpoint(breakpointsList[currentBreakpoint])
+    setBreakpoint(breakpointsList[activeBreakpoint])
   }, [tailwindBreakpoints])
 
-  function toggleMonitor(
-    event: React.MouseEvent<HTMLButtonElement | HTMLDivElement, MouseEvent>
-  ) {
+  function toggleMonitor(event: React.MouseEvent<HTMLElement, MouseEvent>) {
     event.stopPropagation()
     setMonitorExpanded((current) => !current)
   }
