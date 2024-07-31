@@ -1,10 +1,21 @@
 /* ToggleButton/styles.module.scss */
 
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 $button-color: #00000000;
 $button-hover: #ffffff40;
 $opaque-button-hover: #ffffff26;
 
 .button {
+  @include button-reset;
+
   position: absolute;
   z-index: 10;
   right: 1rem;
