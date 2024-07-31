@@ -35,6 +35,10 @@ $text-primary: #fff;
     transition-duration: 500ms;
     transition-delay: 500ms;
 
+    &:first-child {
+      font-size: 1.2rem;
+    }
+
     &:last-child {
       font-family: monospace;
       font-size: 1.1rem;
