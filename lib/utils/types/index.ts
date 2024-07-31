@@ -22,7 +22,7 @@ export interface TwBreakpointMonitorProps {
   transparency?: boolean
 }
 
-export interface HeadingProps extends ComponentProps<'div'> {
+export interface HeaderProps extends ComponentProps<'div'> {
   screenProps: ScreenProps
 }
 

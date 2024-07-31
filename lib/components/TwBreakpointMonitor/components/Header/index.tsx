@@ -1,11 +1,11 @@
-/* Heading/index.tsx */
+/* Header/index.tsx */
 
-import type { HeadingProps } from '../../../../utils/types'
+import type { HeaderProps } from '../../../../utils/types'
 import styles from './styles.module.scss'
-import display from '../../../../assets/display-solid.svg'
-import mobile from '../../../../assets/mobile-screen-solid.svg'
+import display from '../../../../assets/icons/display.svg'
+import mobile from '../../../../assets/icons/mobile-screen.svg'
 
-export function Heading({ screenProps, ...props }: HeadingProps) {
+export function Header({ screenProps, ...props }: HeaderProps) {
   // Displays the viewport resolution and active breakpoint when the monitor is collapsed
 
   return (

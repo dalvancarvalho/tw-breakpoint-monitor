@@ -1,6 +1,4 @@
-/* Heading/styles.module.scss */
-
-@import '@fontsource-variable/red-hat-mono';
+/* Header/styles.module.scss */
 
 $bg-primary: #5988df;
 $text-primary: #fff;
@@ -11,7 +9,6 @@ $text-primary: #fff;
   height: 100%;
   height: 3.5rem;
   font-family: inherit;
-  font-weight: 500;
   cursor: pointer;
 
   &[data-monitor-expanded='false'] > p:first-child {
@@ -31,7 +28,6 @@ $text-primary: #fff;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    font-weight: 500;
     font-size: 1.125rem;
     line-height: 1.75rem;
     white-space: nowrap;
@@ -40,8 +36,8 @@ $text-primary: #fff;
     transition-delay: 500ms;
 
     &:last-child {
-      font-family: 'Red Hat Mono Variable', monospace;
-      font-size: 1rem;
+      font-family: monospace;
+      font-size: 1.1rem;
     }
   }
 
@@ -51,7 +47,9 @@ $text-primary: #fff;
     padding: 0 0.5rem;
     background-color: $bg-primary;
     color: $text-primary;
-    font-size: 0.85rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-family: 'Red Hat';
   }
 
   & * img {

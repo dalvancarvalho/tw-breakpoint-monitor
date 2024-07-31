@@ -2,7 +2,7 @@
 
 import type { TableProps } from '../../../../utils/types'
 import styles from './styles.module.scss'
-import circleQuestion from '../../../../assets/circle-question-solid.svg'
+import circleQuestion from '../../../../assets/icons/circle-question.svg'
 
 export function Table({ screenProps, ...props }: TableProps) {
   // Displays several screen properties when the monitor is expanded

@@ -1,9 +1,7 @@
 /* Table/styles.module.scss */
 
-@import '@fontsource-variable/red-hat-mono';
-
-$border-color-main: #73737399;
 $border-color: #73737366;
+$border-color-main: #73737399;
 $cell-height: 2rem;
 
 .table {
@@ -38,6 +36,7 @@ $cell-height: 2rem;
     font-weight: 500;
 
     & > a {
+      display: inline-block;
       margin-left: 0.5rem;
 
       &:hover > img {
@@ -57,9 +56,10 @@ $cell-height: 2rem;
   & * td {
     height: $cell-height;
     border-bottom: 1px solid $border-color;
-    font-family: 'Red Hat Mono Variable', monospace;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 1rem;
     text-align: center;
     vertical-align: middle;
-    font-weight: 400;
   }
 }

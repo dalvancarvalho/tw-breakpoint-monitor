@@ -1,6 +1,12 @@
 /* TwBreakpointMonitor/styles.module.scss */
 
-@import '@fontsource-variable/red-hat-display';
+@font-face {
+  font-family: 'Red Hat';
+  src: url('/lib/assets/fonts/red-hat-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 $bg-opaque: #262626;
 $bg-opaque-hover: #404040;
@@ -18,7 +24,8 @@ $text-primary: #fff;
   max-width: max-content;
   height: auto;
   backdrop-filter: blur(6px);
-  font-family: 'Red Hat Display Variable', sans-serif;
+  font-family: 'Red Hat', sans-serif;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   color: $text-primary;

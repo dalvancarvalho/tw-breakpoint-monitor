@@ -1,11 +1,14 @@
 /* TwBreakpointMonitor/index.tsx */
 
 import type { TwBreakpointMonitorProps } from '../../utils/types'
+
 import { forwardRef } from 'react'
+
 import { useBreakpointMonitor } from './hooks/useBreakpointMonitor'
-import { Heading } from './components/Heading'
+import { Header } from './components/Header'
 import { ToggleButton } from './components/ToggleButton'
 import { Table } from './components/Table'
+
 import styles from './styles.module.scss'
 
 export const TwBreakpointMonitor = forwardRef<HTMLDivElement, TwBreakpointMonitorProps>(
@@ -26,7 +29,7 @@ export const TwBreakpointMonitor = forwardRef<HTMLDivElement, TwBreakpointMonito
         ref={ref}
         {...props}
       >
-        <Heading
+        <Header
           data-monitor-expanded={isMonitorExpanded}
           onClick={(event) => toggleMonitor(event)}
           screenProps={screenProps}

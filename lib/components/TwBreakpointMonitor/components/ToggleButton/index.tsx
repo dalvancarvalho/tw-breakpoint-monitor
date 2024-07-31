@@ -2,7 +2,7 @@
 
 import type { ToggleButtonProps } from '../../../../utils/types'
 import styles from './styles.module.scss'
-import chevronDown from '../../../../assets/chevron-down-solid.svg'
+import chevronDown from '../../../../assets/icons/chevron-down.svg'
 
 export function ToggleButton(props: ToggleButtonProps) {
   // Toggles the panel between collapsed/expanded state
