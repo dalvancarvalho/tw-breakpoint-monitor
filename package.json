@@ -46,9 +46,5 @@
     "vite": "^4.5.3",
     "vite-plugin-dts": "^3.7.3",
     "vite-plugin-lib-inject-css": "^2.0.1"
-  },
-  "dependencies": {
-    "@fontsource-variable/red-hat-display": "^5.0.21",
-    "@fontsource-variable/red-hat-mono": "^5.0.19"
   }
 }
