@@ -9,7 +9,7 @@ export function Header({ screenProps, ...props }: HeaderProps) {
   // Displays the viewport resolution and active breakpoint when the monitor is collapsed
 
   return (
-    <header className={styles.header} {...props}>
+    <div className={styles.header} {...props}>
       <p>Screen properties</p>
       <p>
         <img
@@ -19,6 +19,6 @@ export function Header({ screenProps, ...props }: HeaderProps) {
         {screenProps.viewportSize}
         <span>{screenProps.breakpoint}</span>
       </p>
-    </header>
+    </div>
   )
 }
