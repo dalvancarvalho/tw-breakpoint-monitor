@@ -60,7 +60,7 @@ $text-primary: #fff;
     flex-direction: column-reverse;
 
     &[data-monitor-expanded='false'] {
-      translate: 0 -80%;
+      translate: 0 -81%;
     }
   }
 
@@ -70,7 +70,7 @@ $text-primary: #fff;
     border-top-right-radius: $border-radius;
 
     &[data-monitor-expanded='false'] {
-      translate: 0 80%;
+      translate: 0 81%;
     }
   }
 
