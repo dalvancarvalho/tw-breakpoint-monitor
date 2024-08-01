@@ -13,7 +13,7 @@ import styles from './styles.module.scss'
 
 export const TwBreakpointMonitor = forwardRef<HTMLDivElement, TwBreakpointMonitorProps>(
   function TwBreakpointMonitor(
-    { className, position = 'bottom-right', transparency = true, ...props },
+    { className = '', position = 'bottom-right', transparency = true, ...props },
     ref
   ) {
     // Displays several screen properties with emphasis in the current breakpoint
