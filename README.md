@@ -5,7 +5,9 @@
 
 **Tailwind Breakpoint Monitor** is a React component that displays the current Tailwind CSS breakpoint in the corner of the screen. It is ideal for developers who want to quickly identify the active breakpoint during development.
 
+<div align="center" style="width: 700px">
 ![banner](https://github.com/user-attachments/assets/096698fc-36ae-40a5-846e-92d6250a8a5f)
+</div>
 
 ## Demo
 
@@ -37,7 +39,7 @@ export default function App() {
 
 <br />
 
-> 💡 **Tip:** Since this component is meant to be used during development, you can also import the `isDevEnvironment` boolean and conditionally render the component only if the app is running in development mode. This way, it will not be rendered on the screen when you preview the production build with `npm run preview`, for example.
+> 💡 **Tip:** Since this component is meant to be used during development, you can also import the `isDevEnvironment` boolean to conditionally render the component only if the app is running in development mode. This way, it will not be rendered on the screen when you preview the production build with `npm run preview`, for example.
 
 ```diff
 - import { TwBreakpointMonitor } from 'tw-breakpoint-monitor'
