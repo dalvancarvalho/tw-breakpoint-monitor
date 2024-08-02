@@ -3,7 +3,7 @@
   "description": "A React component that displays the current Tailwind CSS breakpoint in the corner of the screen. Ideal for developers who want to quickly identify the active breakpoint during development.",
   "author": "Dalvan Carvalho <contact@dalvanc.com>",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "type": "module",
   "main": "dist/main.js",
