@@ -15,6 +15,8 @@
 
 ## Demo
 
+https://github.com/user-attachments/assets/6816a8aa-8dcd-4843-9424-2057a3a6f7c6
+
 ## Installation
 
 ```bash
@@ -26,16 +28,17 @@ npm install tw-breakpoint-monitor
 ```jsx
 /* App.jsx */
 
-import { TwBreakpointMonitor } from 'tw-breakpoint-monitor'
+import { TwBreakpointMonitor } from 'tw-breakpoint-monitor';
 
 export default function App() {
   return (
     <>
       ...
+
       <TwBreakpointMonitor />
     </>
   )
-}
+};
 ```
 
 <br />
@@ -43,8 +46,8 @@ export default function App() {
 > 💡 **Tip:** Since this component is meant to be used during development, you can also import the `isDevEnvironment` constant and conditionally render the component only if the app is running in development mode. This way, it will not be rendered on the screen when you preview the production build with `npm run preview`, for example.
 
 ```diff
-- import { TwBreakpointMonitor } from 'tw-breakpoint-monitor'
-+ import { isDevEnvironment, TwBreakpointMonitor } from 'tw-breakpoint-monitor'
+- import { TwBreakpointMonitor } from 'tw-breakpoint-monitor';
++ import { isDevEnvironment, TwBreakpointMonitor } from 'tw-breakpoint-monitor';
 ```
 
 ```jsx
@@ -52,10 +55,11 @@ export default function App() {
   return (
     <>
       ...
+
       {isDevEnvironment && <TwBreakpointMonitor />}
     </>
   )
-}
+};
 ```
 
 ## Customization
@@ -71,7 +75,16 @@ You can configure the properties below to change the default presentation of the
 
 ```jsx
 // Example:
-<TwBreakpointMonitor position='bottom-left' transparency={false}>
+
+export default function App() {
+  return (
+    <>
+      ...
+
+      <TwBreakpointMonitor position='bottom-left' transparency={false} />
+    </>
+  )
+};
 ```
 
 ## License
