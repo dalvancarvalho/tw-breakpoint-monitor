@@ -1,7 +1,7 @@
 # Tailwind Breakpoint Monitor
 
 ![license type](https://img.shields.io/badge/license-MIT-green)
-![package version](https://img.shields.io/badge/npm-v1.0.0-blue?logo=npm)
+![package version](https://img.shields.io/badge/npm-v1.0.1-blue?logo=npm)
 
 **Tailwind Breakpoint Monitor** is a React component that displays the current Tailwind CSS breakpoint in the corner of the screen. It is ideal for developers who want to quickly identify the active breakpoint during development.
 
