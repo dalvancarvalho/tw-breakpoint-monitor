@@ -34,6 +34,7 @@ export default function App() {
   return (
     <>
       ...
+
       <TwBreakpointMonitor />
     </>
   )
@@ -54,6 +55,7 @@ export default function App() {
   return (
     <>
       ...
+
       {isDevEnvironment && <TwBreakpointMonitor />}
     </>
   )
@@ -79,6 +81,7 @@ export default function App() {
   return (
     <>
       ...
+
       <TwBreakpointMonitor position="bottom-left" transparency={false} />
     </>
   )
