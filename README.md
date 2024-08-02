@@ -64,10 +64,10 @@ export default function App() {
 
 You can configure the properties below to change the default presentation of the component:
 
-| Property     |                                                                              Description                                                                              |        Default |
-| ------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | -------------: |
+| Property     |                                                                              Description                                                                              | Default        |
+| ------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | -------------- |
 | position     | Place of the screen where the component will be rendered. Available options are `top-left`, `top-center`, `top-right`, `bottom-left`, `bottom-center`, `bottom-right` | `bottom-right` |
-| transparency |                                  Determines whether the component will have a level of transparency. Can be either `true` or `false`                                  |         `true` |
+| transparency |                                  Determines whether the component will have a level of transparency. Can be either `true` or `false`                                  | `true`         |
 
 <br />
 
