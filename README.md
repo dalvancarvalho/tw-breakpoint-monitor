@@ -5,13 +5,7 @@
 
 **Tailwind Breakpoint Monitor** is a React component that displays the current Tailwind CSS breakpoint in the corner of the screen. It is ideal for developers who want to quickly identify the active breakpoint during development.
 
-<div align="center">
-  <img
-    style="width: 700px"
-    src="./public/banner.png"
-    alt="banner"
-  />
-</div>
+![banner](https://github.com/user-attachments/assets/096698fc-36ae-40a5-846e-92d6250a8a5f)
 
 ## Demo
 
@@ -28,7 +22,7 @@ npm install tw-breakpoint-monitor
 ```jsx
 /* App.jsx */
 
-import { TwBreakpointMonitor } from 'tw-breakpoint-monitor';
+import { TwBreakpointMonitor } from 'tw-breakpoint-monitor'
 
 export default function App() {
   return (
@@ -38,16 +32,16 @@ export default function App() {
       <TwBreakpointMonitor />
     </>
   )
-};
+}
 ```
 
 <br />
 
-> 💡 **Tip:** Since this component is meant to be used during development, you can also import the `isDevEnvironment` constant and conditionally render the component only if the app is running in development mode. This way, it will not be rendered on the screen when you preview the production build with `npm run preview`, for example.
+> 💡 **Tip:** Since this component is meant to be used during development, you can also import the `isDevEnvironment` boolean and conditionally render the component only if the app is running in development mode. This way, it will not be rendered on the screen when you preview the production build with `npm run preview`, for example.
 
 ```diff
-- import { TwBreakpointMonitor } from 'tw-breakpoint-monitor';
-+ import { isDevEnvironment, TwBreakpointMonitor } from 'tw-breakpoint-monitor';
+- import { TwBreakpointMonitor } from 'tw-breakpoint-monitor'
++ import { isDevEnvironment, TwBreakpointMonitor } from 'tw-breakpoint-monitor'
 ```
 
 ```jsx
@@ -59,7 +53,7 @@ export default function App() {
       {isDevEnvironment && <TwBreakpointMonitor />}
     </>
   )
-};
+}
 ```
 
 ## Customization
@@ -74,7 +68,8 @@ You can configure the properties below to change the default presentation of the
 <br />
 
 ```jsx
-// Example:
+// In this example, the component will be rendered in the
+// bottom-left part of the screen with full opacity
 
 export default function App() {
   return (
@@ -84,7 +79,7 @@ export default function App() {
       <TwBreakpointMonitor position='bottom-left' transparency={false} />
     </>
   )
-};
+}
 ```
 
 ## License
