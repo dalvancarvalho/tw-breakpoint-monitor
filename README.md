@@ -8,14 +8,14 @@
 <div align="center">
   <img
     style="width: 700px"
-    src="./public/banner.png"
+    src="./public/assets/banner.png"
     alt="banner"
   />
 </div>
 
 ## Demo
 
-_A video will be placed here_
+[![Demo](https://raw.githubusercontent.com/dalvancarvalho/tw-breakpoint-monitor/blob/main/public/assets/demo.mp4)](https://raw.githubusercontent.com/dalvancarvalho/tw-breakpoint-monitor/blob/main/public/assets/demo.mp4)
 
 ## Installation
 
