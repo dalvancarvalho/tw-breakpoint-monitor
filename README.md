@@ -15,8 +15,6 @@
 
 ## Demo
 
-[![Demo](https://raw.githubusercontent.com/dalvancarvalho/tw-breakpoint-monitor/blob/main/public/assets/demo.mp4)](https://raw.githubusercontent.com/dalvancarvalho/tw-breakpoint-monitor/blob/main/public/assets/demo.mp4)
-
 ## Installation
 
 ```bash
@@ -25,7 +23,7 @@ npm install tw-breakpoint-monitor
 
 ## Usage
 
-```javascript
+```jsx
 /* App.jsx */
 
 import { TwBreakpointMonitor } from 'tw-breakpoint-monitor'
@@ -49,7 +47,7 @@ export default function App() {
 + import { isDevEnvironment, TwBreakpointMonitor } from 'tw-breakpoint-monitor'
 ```
 
-```javascript
+```jsx
 export default function App() {
   return (
     <>
@@ -71,7 +69,7 @@ You can configure the properties below to change the default presentation of the
 
 <br />
 
-```javascript
+```jsx
 // Example:
 <TwBreakpointMonitor position='bottom-left' transparency={false}>
 ```
